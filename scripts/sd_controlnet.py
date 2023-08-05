@@ -79,8 +79,9 @@ def download_sd():
 
     for model in [
         "runwayml/stable-diffusion-v1-5",
-        "SG161222/Realistic_Vision_V1.4",
+        "SG161222/Realistic_Vision_V5.1_noVAE",
         "Lykon/DreamShaper",
+        "Lykon/AbsoluteReality",
     ]:
         print(f"Loading model {model}...")
         sd_pipe = StableDiffusionPipeline.from_pretrained(
@@ -276,7 +277,7 @@ def entrypoint(
     seed: int = None,
     steps: int = 30,
     n: int = 1,
-    sd_model: str = "SG161222/Realistic_Vision_V1.4",
+    sd_model: str = "SG161222/Realistic_Vision_V5.1_noVAE",
     controlnet_model: str = "monster-labs/control_v1p_sd15_qrcode_monster:v2",
     guidance_scale: float = 7.5,
     controlnet_conditioning_scale: float = 1.45,
@@ -300,6 +301,7 @@ def entrypoint(
             negative_prompt or "",
             "ugly",
             "bad hands",
+            "bad anatomy",
             "bad",
             "low quality",
             "cartoon",
@@ -307,6 +309,7 @@ def entrypoint(
             "boring",
             "dull",
             "uninteresting",
+            "cropped",
         ]
     )
 
