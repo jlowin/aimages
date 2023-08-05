@@ -277,7 +277,7 @@ def entrypoint(
     seed: int = None,
     steps: int = 30,
     n: int = 1,
-    sd_model: str = "SG161222/Realistic_Vision_V5.1_noVAE",
+    sd_model: str = "Lykon/AbsoluteReality",
     controlnet_model: str = "monster-labs/control_v1p_sd15_qrcode_monster:v2",
     guidance_scale: float = 7.5,
     controlnet_conditioning_scale: float = 1.45,

@@ -50,5 +50,5 @@ In addition to the control image and prompt, you can provide many options to con
 | `--negative-prompt` |  | Generated images will try to "avoid" this description |
 | `--guidance-scale` | 7.5 | The strength of the prompt for the Stable Diffusion model. Values between 7-9 are generally recommended; higher values will attempt to represent prompts more literally. |
 | `--controlnet-conditioning-scale` | 1.3 | The strength of the ControlNet. Values between 1-2 are effective; higher values make text more visible. |
-| `--sd-model` | `SG161222/Realistic_Vision_V5.1_noVAE` |This script automatically downloads a few popular Stable Diffusion weights: `runwayml/stable-diffusion-v1-5` (the base SD model), as well as `SG161222/Realistic_Vision_V5.1_noVAE`, `Lykon/AbsoluteReality`, and `Lykon/DreamShaper`. You can choose any of them to adjust the style of your images. |
+| `--sd-model` | `Lykon/AbsoluteReality` |This script automatically downloads a few popular Stable Diffusion weights: `runwayml/stable-diffusion-v1-5` (the base SD model), as well as `SG161222/Realistic_Vision_V5.1_noVAE`, `Lykon/AbsoluteReality`, and `Lykon/DreamShaper`. You can choose any of them to adjust the style of your images. |
 
