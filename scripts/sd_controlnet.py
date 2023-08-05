@@ -4,7 +4,7 @@ import io
 import os
 from pathlib import Path
 from typing import Union
-from modal import Image, Secret, Stub, method
+from modal import Image, Stub, method
 
 stub = Stub("controlnet")
 
@@ -160,10 +160,7 @@ def load_controlnet(model_id: str, **kwargs):
     return controlnet
 
 
-@stub.cls(
-    gpu="a10g",
-    secrets=[Secret.from_name("huggingface-secret")],
-)
+@stub.cls(gpu="a10g")
 class StableDiffusion:
     def setup_models(
         self,
