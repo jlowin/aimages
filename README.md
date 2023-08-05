@@ -3,6 +3,8 @@
 
 A script for generating images that contain hidden text.
 
+Blog post and motivation: https://www.factsmachine.ai/p/hidden-in-plain-sight
+
 ## Setup
 ### Modal
 This script is designed to run on [Modal](www.modal.com) GPUs. Before running it, please set up your Modal account from your local machine. Please note that Modal is a commercial product
