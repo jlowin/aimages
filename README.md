@@ -18,7 +18,9 @@ pip install -r requirements.txt
 ```
 ## Running
 
-You'll need to create a control image. For best results, use a PNG of white text on a black background. Save this on your machine.
+You'll need to create a control image. For best results, use a PNG of white text on a black background, like this one: 
+
+![](img/example.png)
 
 Run the script with Modal, replacing the path and prompt appropriately:
 
